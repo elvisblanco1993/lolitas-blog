@@ -25,8 +25,8 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
-    <body class="bg-white dark:bg-gray-900">
-        <div class="font-sans text-gray-900 dark:text-gray-200 antialiased relative min-h-screen">
+    <body class="bg-white ">
+        <div class="font-sans text-gray-900  antialiased relative min-h-screen">
             @yield('article')
         </div>
         @include('layouts.footer')

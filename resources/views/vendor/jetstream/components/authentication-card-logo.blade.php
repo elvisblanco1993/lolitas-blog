@@ -4,7 +4,7 @@
     </div>
 
     @if (request()->routeIs('login'))
-        <div class="mt-6 text-lg font-bold text-gray-600 dark:text-gray-200">
+        <div class="mt-6 text-lg font-bold text-gray-600 ">
             {{__("Welcome back!")}}
         </div>
     @endif

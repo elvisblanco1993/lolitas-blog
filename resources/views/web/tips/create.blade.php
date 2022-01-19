@@ -13,21 +13,21 @@
                 @csrf
                 <div class="grid grid-cols-2 gap-8">
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="name" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{__("Name (required)")}}</label>
+                        <label for="name" class="block font-medium text-sm text-gray-700 ">{{__("Name (required)")}}</label>
                         <input type="text" name="name" class="mt-1">
                         @error('name')
                             <small class="text-red-600">{{$message}}</small>
                         @enderror
                     </div>
                     <div class="col-span-2 sm:col-span-1">
-                        <label for="email" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{__("Email (if requiring a reply)")}}</label>
+                        <label for="email" class="block font-medium text-sm text-gray-700 ">{{__("Email (if requiring a reply)")}}</label>
                         <input type="email" name="email" class="mt-1">
                         @error('email')
                             <small class="text-red-600">{{$message}}</small>
                         @enderror
                     </div>
                     <div class="col-span-2">
-                        <label for="message" class="block font-medium text-sm text-gray-700 dark:text-gray-300">{{__("Message (required)")}}</label>
+                        <label for="message" class="block font-medium text-sm text-gray-700 ">{{__("Message (required)")}}</label>
                         <textarea name="message" id="message" cols="30" rows="10" class="mt-1"></textarea>
                         @error('message')
                             <small class="text-red-600">{{$message}}</small>

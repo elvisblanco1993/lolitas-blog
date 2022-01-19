@@ -2,25 +2,25 @@
     <div class="max-w-7xl mx-auto my-6 px-4 sm:px-6 lg:px-8">
 
         <div class="grid grid-cols-4 gap-4">
-            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-600 shadow-sm">
-                <div class="text-gray-500 dark:text-gray-300 text-xs">{{__("Total Views")}}</div>
-                <div class="mt-2 text-lg font-semibold text-gray-700 dark:text-gray-200">{{ $totalArticleReads }}</div>
+            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white  rounded-lg border  shadow-sm">
+                <div class="text-gray-500  text-xs">{{__("Total Views")}}</div>
+                <div class="mt-2 text-lg font-semibold text-gray-700 ">{{ $totalArticleReads }}</div>
             </div>
 
-            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-600 shadow-sm">
-                <div class="text-gray-500 dark:text-gray-300 text-xs">{{__("Avg Article Views")}}</div>
-                <div class="mt-2 text-lg font-semibold text-gray-700 dark:text-gray-200">{{ $avgArticleReads }}</div>
+            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white  rounded-lg border  shadow-sm">
+                <div class="text-gray-500  text-xs">{{__("Avg Article Views")}}</div>
+                <div class="mt-2 text-lg font-semibold text-gray-700 ">{{ $avgArticleReads }}</div>
             </div>
 
-            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-600 shadow-sm">
-                <div class="text-gray-500 dark:text-gray-300 text-xs">{{__("Articles Created")}}</div>
-                <div class="mt-2 text-lg font-semibold text-gray-700 dark:text-gray-200">{{ $articlesMade }}</div>
+            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white  rounded-lg border  shadow-sm">
+                <div class="text-gray-500  text-xs">{{__("Articles Created")}}</div>
+                <div class="mt-2 text-lg font-semibold text-gray-700 ">{{ $articlesMade }}</div>
             </div>
 
-            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white dark:bg-gray-800 rounded-lg border dark:border-gray-600 shadow-sm">
-                <div class="text-gray-500 dark:text-gray-300 text-xs">{{__("Monthly Increase")}}</div>
+            <div class="col-span-4 sm:col-span-2 md:col-span-1 p-4 bg-white  rounded-lg border  shadow-sm">
+                <div class="text-gray-500  text-xs">{{__("Monthly Increase")}}</div>
                 <div class="mt-2 flex items-center">
-                    <div class="text-lg font-semibold text-gray-700 dark:text-gray-200">{{ $monthlyIncrease }}</div>
+                    <div class="text-lg font-semibold text-gray-700 ">{{ $monthlyIncrease }}</div>
                     @if ($monthlyIncreasePercentage > 0)
                         <div class="ml-4 text-xs px-1 py-0.5 bg-green-100 text-green-800 rounded-md">&uparrow; {{ $monthlyIncreasePercentage }}%</div>
                     @elseif ($monthlyIncreasePercentage == 0)
