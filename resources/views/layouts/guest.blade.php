@@ -24,6 +24,9 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        @if (!request()->routeIs('login') && !request()->routeIs('register'))
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6691661138979501" crossorigin="anonymous"></script>
+        @endif
     </head>
     <body class="bg-white ">
         <div class="font-sans  text-gray-900  antialiased relative min-h-screen">

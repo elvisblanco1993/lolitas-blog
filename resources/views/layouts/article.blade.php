@@ -14,7 +14,7 @@
             <meta property="og:image"        content="{{ asset('images/'.$article->image) }}" />
         @endif
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Lolitas Blog') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -24,6 +24,9 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+
+        {{-- Google Adsense --}}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6691661138979501" crossorigin="anonymous"></script>
     </head>
     <body class="bg-white ">
         <div class="font-sans text-gray-900  antialiased relative min-h-screen">
