@@ -25,6 +25,17 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YPNM3VTECR"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-YPNM3VTECR');
+        </script>
+
         {{-- Google Adsense --}}
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6691661138979501" crossorigin="anonymous"></script>
     </head>
